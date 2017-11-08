@@ -1,4 +1,4 @@
-linux的命令：history
+linux的命令：history  默认的条数1000 有配置文件可以配置
 [test1@localhost shell]$ history
     1  ls 
     2  su - root
