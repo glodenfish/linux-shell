@@ -29,3 +29,8 @@ SSH_AGENT_PID=2950
 HOSTNAME=localhost.localdomain
 IMSETTINGS_INTEGRATE_DESKTOP=yes
 GPG_AGENT_INFO=/run/user/1000/keyring/gpg:0:1
+
+使用管道和正则表达式
+[root@localhost shell]# env | grep '^P'
+PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/test1/.local/bin:/home/test1/bin
+PWD=/home/test1/桌面/shell
