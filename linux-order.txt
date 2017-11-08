@@ -50,3 +50,6 @@ b
 [root@localhost shell]# b=$a"$a"
 [root@localhost shell]# echo $b
 11
+取消变量
+[root@localhost shell]# unset a
+[root@localhost shell]# echo $a
