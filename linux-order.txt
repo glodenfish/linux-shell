@@ -34,3 +34,19 @@ GPG_AGENT_INFO=/run/user/1000/keyring/gpg:0:1
 [root@localhost shell]# env | grep '^P'
 PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/test1/.local/bin:/home/test1/bin
 PWD=/home/test1/桌面/shell
+
+变量
+[root@localhost shell]# _a1=2
+[root@localhost shell]# echo $_a1
+2
+[root@localhost shell]# b=$a'123'
+[root@localhost shell]# echo b
+b
+[root@localhost shell]# echo $b
+1123
+[root@localhost shell]# b=$a'$a'
+[root@localhost shell]# echo $b
+1$a
+[root@localhost shell]# b=$a"$a"
+[root@localhost shell]# echo $b
+11
