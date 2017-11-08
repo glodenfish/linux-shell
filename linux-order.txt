@@ -8,3 +8,24 @@ linux的命令：history  默认的条数1000 有配置文件可以配置
     6  echo ENV
     7  echo path
     8  history
+
+[root@localhost shell]# !g   #简化命令系统中的以g开头的
+git init
+系统变量：
+[root@localhost shell]# echo $LANG
+zh_CN.UTF-8
+[root@localhost shell]# ECHO $HOSTNMAE
+bash: ECHO: 未找到命令...
+相似命令是： 'echo'
+[root@localhost shell]# echo $HOSTNAME
+localhost.localdomain
+[root@localhost shell]# a=1
+[root@localhost shell]# echo $a
+1
+[root@localhost shell]# env
+XDG_VTNR=1
+XDG_SESSION_ID=1
+SSH_AGENT_PID=2950
+HOSTNAME=localhost.localdomain
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+GPG_AGENT_INFO=/run/user/1000/keyring/gpg:0:1
