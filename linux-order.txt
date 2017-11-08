@@ -1,0 +1,10 @@
+linux的命令：history
+[test1@localhost shell]$ history
+    1  ls 
+    2  su - root
+    3  ls
+    4  grep 
+    5  echo env
+    6  echo ENV
+    7  echo path
+    8  history
