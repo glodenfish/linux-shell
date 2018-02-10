@@ -53,3 +53,8 @@ b
 取消变量
 [root@localhost shell]# unset a
 [root@localhost shell]# echo $a
+
+修改文件的所属组同时修改文件的所属用户
+sudo chown  root:root 文件名或者文件夹名(加上-R)
+修改文件的所属组
+sudo chgrp 组名  文件名
