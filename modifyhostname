@@ -1,0 +1,11 @@
+一、永久修改
+修改/etc/sysconfig/network，在里面指定主机名称HOSTNAME=
+然后执行命令
+hostname 主机名
+这个时候可以注销一下系统，再重登录之后就行了。
+
+或者修改/etc/hosts文件中添加
+192.168.2.13      linux     ####ip ＋主机名
+然后：
+hostname 主机名
+这个时候可以注销一下系统，再重登录之后
