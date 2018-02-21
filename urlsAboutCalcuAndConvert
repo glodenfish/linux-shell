@@ -1,3 +1,5 @@
 you can collection some websit about calculate or convertion:
 
 https://www.rapidtables.com
+
+tar -zvxf apache-flume-1.8.0-bin.tar.gz -C /usr/local    使用过程中-C后的参数  /usr/local   不是 /usr/local/ 会报错。
