@@ -1,0 +1,7 @@
+新建一个用户  adduser  lxy61  
+设置密码：    passwd lxy61 修改密码
+添加到sudoers文件中
+删除原来的lxy用户  userdel -rf  lxy   删除原来的用户和home文件夹下的子文件夹
+
+将lxy65加入sudoers文件    vi  /etc/sudoers
+              在  root    all=（all） all 加入 lxy65  all=（all） all
