@@ -1,0 +1,12 @@
+jdk安装。如果有openjdk先删除，也可以切换版本
+ rpm -qa|grep java
+
+ rpm -e --nodeps 包名字
+安装sunjdk： vi /etc/profile
+JAVA_HOME=/usr/java/jdk1.8.0_111
+JRE_HOME=/usr/java/jdk1.8.0_111/jre 可以不要
+PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
+CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib 可以不用配置
+export JAVA_HOME JRE_HOME PATH CLASSPATH
+
+source  /etc/profile   配置生效
