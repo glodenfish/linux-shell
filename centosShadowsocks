@@ -1,0 +1,43 @@
+CentOS命令行使用shadowsocks代理
+$>yum install python-pip
+$>pip install shadowsocks
+没有pip 就使用然后就可以安装
+$> yum -y install epel-release
+
+$> vi /etc/shadowsocks.json 
+注意文件中不能有其他字符
+#多端口
+{
+    "server":"0.0.0.0",
+    "local_address":"127.0.0.1",
+    "local_port":1080,
+    "port_password":{     
+     "8089":"th8089",
+     "8090":"th8090"
+    },
+    "timeout":300,
+    "method":"aes-256-cfb",
+    "fast_open":false,
+    "workers":1
+}
+单端口：  
+ {  
+ "server":"0.0.0.0",            // 服务器IP，直接用0.0.0.0也可  
+ "server_port":8888,            // 端口*  
+ "local_address": "127.0.0.1",  // 本地地址，可省略  
+ "local_port":1080,             // 本地端口，可省略  
+ "password":"password",         // 密码*  
+ "timeout":300,                 // 超时时间，可省略  
+ "method":"aes-256-cfb",        // 加密策略，有多重策略，具体自查  
+}
+加密策略：rc4-md5
+
+
+// 启动  
+ssserver -c /etc/shadowsocks.json -d start  
+// 停止  
+ssserver -c /etc/shadowsocks.json -d stop  
+// 重启  
+ssserver -c /etc/shadowsocks.json -d restart 
+
+使用：netstat -lp  查看是否准备好
